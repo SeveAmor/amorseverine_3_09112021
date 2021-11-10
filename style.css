@@ -104,17 +104,16 @@ ol{
 	border-radius: 100%;
 	font-weight: bold;
 	font-size: 0.8rem;
-	color: white;	
+	color: #fff;	
     position: absolute;	
 }
 .fonction_icon{
-    color:grey;
+    color:#7e7e7e;
 }
+.list:hover,
 .fonction_icon:hover{
     color:var(--couleur-primaire);
-}
-.list:hover{
-    background-color: rgb(240, 228, 252);
+    background-color: #f5edff;
 }
 .fonction_text{
     padding: 0.5rem;
@@ -131,7 +130,7 @@ ol{
 }
 .card{
     display: block;
-    background: white;
+    background: #fff;
     border-radius: 1rem;
     position: relative;
     box-sizing: content-box;
@@ -147,7 +146,7 @@ ol{
 }
 .card_new{
     background-color: #99e2d0;
-    color: #2d9b7f;
+    color: #008766;
     font-weight: bold;
     padding: 0.5rem 1rem;
     border-radius: 0.20rem;
@@ -178,10 +177,17 @@ ol{
     cursor: pointer;
     position: relative;
 }
+.card_coeur:hover{
+    background-image: linear-gradient(#9356dc,#ff79da);
+}
+.card_coeur:active{
+    background-image: linear-gradient(#9356dc,#ff79da);
+}
+
 /**footer**/
 
 footer{
-    background-color: #313131;
+    background-color: #353535;
     color:white;
 }
 footer .container{
