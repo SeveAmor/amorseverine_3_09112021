@@ -68,7 +68,7 @@ h4{
     position: relative;
     padding-bottom: 0.5rem;
     font-weight: 400;
-    
+    text-transform: uppercase;
 }    
 .sousmenu_titre::after{
     content: "";
@@ -79,27 +79,79 @@ h4{
     left: 0;
     bottom: 0;
 }
+/**card**/
+.delay-0{
+    animation-delay: 0s;
+}
+.delay-1{
+    animation-delay: 1s;
+}
+.delay-2{
+    animation-delay: 2s;
+}
+    
 .card{
     background-color: #fff;
     display: flex;
-    justify-content: space-between;
     border-radius: 0.75rem;
-    padding: 1rem;
+    padding-left: 0.5rem;
     margin: 1rem 0;
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 0 0.5rem #a7a7a7;
+    max-width: 100%;
+    animation-duration: .6s;
+    animation-timing-function: cubic-bezier() ;
+    animation-fill-mode: both;
 }
-.card_info{
+.card_header{
+    flex: 1;
+}
+.card_titre{
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.card_info {
+    width: 200px;
     font-size: 0.8rem;
     margin-top:0;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .card_prix{
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    padding-left: 0.5rem;  
+}
+.card_valid{
+    background-color: #99e2d0;
+    margin: -1rem -5rem -1rem 2.5rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    
+    transition-duration: .5s;
+    cursor: pointer;
+}
+.card_check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    width: 1.5rem;
+    background-color: #fff;
+    transition-duration: .5s;
+}
+.fa-check{
+    color: #99e2d0;
+}
+.card_valid:hover,
+.card_valid:active{
+    margin:0;
 }
 /**bouton commande**/
 .bouton_titre{
@@ -119,7 +171,7 @@ h4{
 }
 .bouton_titre:hover{
     background-color: #fff;
-    box-shadow: 0 1px black;
+    box-shadow: 0 1px #fffdfd;
 }
 /**footer**/
 
