@@ -80,14 +80,25 @@ h4{
     bottom: 0;
 }
 /**card**/
-.delay-0{
+@keyframes apparition{
+    0%{
+        transform: scale(0);
+        -webkit-transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+.delay-0 {
     animation-delay: 0s;
 }
-.delay-1{
-    animation-delay: 1s;
-}
-.delay-2{
+.delay-1 {
     animation-delay: 2s;
+}
+.delay-2 {
+    animation-delay: 3s;
 }
     
 .card{
@@ -99,10 +110,11 @@ h4{
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 0 0.5rem #a7a7a7;
-    max-width: 100%;
-    animation-duration: .6s;
-    animation-timing-function: cubic-bezier() ;
+    animation: apparition 0.5s;
+    animation-timing-function: ease-in-out ;
     animation-fill-mode: both;
+    transform: scale(0);
+     max-width: 100%;
 }
 .card_header{
     flex: 1;
@@ -143,6 +155,7 @@ h4{
     justify-content: center;
     border-radius: 100px;
     width: 1.5rem;
+    height: 1.5rem;
     background-color: #fff;
     transition-duration: .5s;
 }
