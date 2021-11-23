@@ -82,12 +82,14 @@ h4{
 /**card**/
 @keyframes apparition{
     0%{
-        transform: scale(0);
-        -webkit-transform: scale(0);
+        opacity: 0;
+        transform: translateY(15px);
+        -webkit-transform: translateY(15px);
     }
     100%{
-        transform: scale(1);
-        -webkit-transform: scale(1);
+        opacity: 1;
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
     }
 }
 
@@ -100,7 +102,9 @@ h4{
 .delay-2 {
     animation-delay: 3s;
 }
-    
+.delay-3{
+    animation-delay: 4s;
+}    
 .card{
     background-color: #fff;
     display: flex;
@@ -110,11 +114,9 @@ h4{
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 0 0.5rem #a7a7a7;
-    animation: apparition 0.5s;
-    animation-timing-function: ease-in-out ;
-    animation-fill-mode: both;
-    transform: scale(0);
-     max-width: 100%;
+    animation: apparition 2s ease-in-out both;
+    transform: translateY(0);
+    max-width: 100%;
 }
 .card_header{
     flex: 1;
@@ -137,7 +139,8 @@ h4{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-left: 0.5rem;  
+    padding-left: 0.5rem; 
+    font-weight: bold; 
 }
 .card_valid{
     background-color: #99e2d0;
@@ -158,14 +161,16 @@ h4{
     height: 1.5rem;
     background-color: #fff;
     transition-duration: .5s;
+    transform: rotate(360deg);
+    transition-duration: .5s;
 }
 .fa-check{
     color: #99e2d0;
 }
-.card_valid:hover,
-.card_valid:active{
+.card_valid:hover{
     margin:0;
 }
+
 /**bouton commande**/
 .bouton_titre{
     display: flex;
@@ -180,11 +185,12 @@ h4{
     background-image: linear-gradient(#ff79da, #9356dc);
     cursor: pointer;
     transition-duration: .25s;
-    box-shadow: 0 0 0.5rem #a7a7a7;
+    box-shadow: 0 0 1rem #505050;
 }
 .bouton_titre:hover{
     background-color: #fff;
     box-shadow: 0 1px #fffdfd;
+    background-image: linear-gradient(#fc8cdc, #b781fd);
 }
 /**footer**/
 
