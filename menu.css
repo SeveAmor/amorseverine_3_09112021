@@ -63,6 +63,7 @@ h4{
     max-width: 100%;
     overflow: hidden;
     padding: 0 1rem;
+    animation: apparition 800ms 3500ms linear both;
 }
 .sousmenu_titre{
     position: relative;
@@ -79,32 +80,17 @@ h4{
     left: 0;
     bottom: 0;
 }
+.entrees{
+    animation:apparition 800ms 500ms linear both;
+}
+.plat{
+    animation:apparition 800ms 1000ms linear both;
+}
+.dessert{
+    animation:apparition 800ms 1500ms linear both;
+}
 /**card**/
-@keyframes apparition{
-    0%{
-        opacity: 0;
-        transform: translateY(15px);
-        -webkit-transform: translateY(15px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-        -webkit-transform: translateY(0px);
-    }
-}
 
-.delay-0 {
-    animation-delay: 0s;
-}
-.delay-1 {
-    animation-delay: 2s;
-}
-.delay-2 {
-    animation-delay: 3s;
-}
-.delay-3{
-    animation-delay: 4s;
-}    
 .card{
     background-color: #fff;
     display: flex;
@@ -114,7 +100,7 @@ h4{
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 0 0.5rem #a7a7a7;
-    animation: apparition 2s ease-in-out both;
+    animation: opacity 2000ms 1000ms linear both;
     transform: translateY(0);
     max-width: 100%;
 }
@@ -177,9 +163,9 @@ h4{
     align-items: center;
     justify-content: center;
     border: 0;
-    padding: 0.75rem 1.5rem;
+    padding: 1.1rem 1.2rem;
     margin:3rem;
-    font-weight: 500;
+    font-size: large;
     border-radius: 100px;
     color: #fff;
     background-image: linear-gradient(#ff79da, #9356dc);
@@ -189,8 +175,8 @@ h4{
 }
 .bouton_titre:hover{
     background-color: #fff;
-    box-shadow: 0 1px #fffdfd;
-    background-image: linear-gradient(#fc8cdc, #b781fd);
+    box-shadow: 0 0 1rem 0 #2e2b2b;
+    background-image: linear-gradient(#ff93e1, #a16be0);
 }
 /**footer**/
 
@@ -220,4 +206,53 @@ footer .container{
 }
 .footer_listbis{
     margin-bottom: 0.5rem;
+}
+/**keyframe**/
+
+@keyframes opacity{
+    0%{
+        opacity: 0;
+        -webkit-opacity:0;
+    }
+    100%{
+        opacity: 1;
+        -webkit-opacity:1;
+    }
+}
+@keyframes apparition{
+    0%{
+        
+        transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+    }
+    100%{
+        
+        transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+    }
+}
+/**responsive**/
+
+@media (min-width: 767.9888px) {   /*format 768px et +*/
+    
+    .sousmenu_titre{
+        margin-left:1rem
+    }
+    
+    .card_titre{
+        overflow: visible;
+    }
+    .card_info{
+        overflow: visible;
+    }
+    .footer_logo{
+        align-items: center;
+        margin-right: 0;
+    }
+    .footer_list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }

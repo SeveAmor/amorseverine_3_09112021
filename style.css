@@ -93,7 +93,7 @@ header{
     font-weight: bold;
 }
 .titre{
-    height: 10rem;
+    height: 14rem;
     padding: 2rem;
     text-align: center;
     background-color: #fafafa;
@@ -114,8 +114,8 @@ header{
 }
 .bouton_titre:hover{
     background-color: #fff;
-    box-shadow: 0 1px #fffdfd;
-    background-image: linear-gradient(#fc8cdc, #b781fd);
+    box-shadow: 0 0 1rem 0 #2e2b2b;
+    background-image: linear-gradient(#ff93e1, #a16be0);
 }
 
 /**fontionnement**/
@@ -167,6 +167,7 @@ ol{
 .fonction_icon{
     color:#7e7e7e;
 }
+
 .list:hover,
 .fonction_icon:hover{
     color:var(--couleur-primaire);
@@ -257,6 +258,7 @@ ol{
     opacity: 0;
     transition-duration: .25s;
     z-index: 1;
+    background: linear-gradient(#9356dc,#ff79da);
 }
 .card_coeur:hover {
     background: linear-gradient(#9356dc,#ff79da);
@@ -331,11 +333,23 @@ footer .container{
         -webkit-transform: rotate(-360deg);
     }
 }
+@keyframes opacity{
+    0%{
+        opacity: 0;
+        -webkit-opacity:0;
+    }
+    100%{
+        opacity: 1;
+        -webkit-opacity:1;
+    }
+}
 
 /**responsive**/
 
 @media (min-width: 767.9888px) {  /*format 768px et +*/
-    
+    .titre{
+        height: 10rem;
+    }
     .fonction_choix{
         display: flex;
         flex-direction: row;
@@ -361,10 +375,14 @@ footer .container{
     .card_img{
         height: 12rem;
     }
+    .footer_logo{
+        align-items: center;
+        margin-right: 0;
+    }
     .footer_list{
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-
 }
