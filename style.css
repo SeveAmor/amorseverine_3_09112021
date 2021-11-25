@@ -168,10 +168,12 @@ ol{
     color:#7e7e7e;
 }
 
-.list:hover,
+.list:hover{
+    background-color: #f5edff;
+}
 .fonction_icon:hover{
     color:var(--couleur-primaire);
-    background-color: #f5edff;
+    
 }
 .fonction_text{
     padding: 0.5rem;
@@ -260,6 +262,7 @@ ol{
     z-index: 1;
     background: linear-gradient(#9356dc,#ff79da);
 }
+
 .card_coeur:hover {
     background: linear-gradient(#9356dc,#ff79da);
     
@@ -362,6 +365,7 @@ footer .container{
     h2{
         margin-left: 2rem;
     }
+    /**cards**/
     .cards{
         display: flex;
         flex-direction: row;
@@ -371,10 +375,19 @@ footer .container{
     .card{
         width: 45%;
         height: 274px;
+        
     }
     .card_img{
         height: 12rem;
     }
+    .card:hover{
+        transform: scale(1.05); /* Safari et Chrome */
+        -moz-transform: scale(1.05); /* Firefox */
+        transition-duration: .5s;
+        backface-visibility: hidden;
+        object-fit: cover;
+    }
+    /**foter**/
     .footer_logo{
         align-items: center;
         margin-right: 0;

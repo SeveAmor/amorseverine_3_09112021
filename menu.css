@@ -42,6 +42,7 @@ h4{
     max-height: 32rem;
     object-fit: cover;
 } 
+/**menu**/
 .menu{
     margin-top: -4rem;
     background-color: #f6f6f6;
@@ -70,15 +71,17 @@ h4{
     padding-bottom: 0.5rem;
     font-weight: 400;
     text-transform: uppercase;
+    padding-left: 1rem;
 }    
 .sousmenu_titre::after{
     content: "";
-    width: 3rem;
-    height: 0.25rem;
+    width: 2.5rem;
+    height: 3px;
     background-color: #99e2d0;
     position: absolute;
     left: 0;
     bottom: 0;
+    margin-left: 1rem;
 }
 .entrees{
     animation:apparition 800ms 500ms linear both;
@@ -221,7 +224,7 @@ footer .container{
 }
 @keyframes apparition{
     0%{
-        
+
         transform: scaleY(0);
         -webkit-transform: scaleY(0);
     }
@@ -236,19 +239,32 @@ footer .container{
 @media (min-width: 767.9888px) {   /*format 768px et +*/
     
     .sousmenu_titre{
-        margin-left:1rem
+        margin-left:1rem;
+        padding-left:0;
     }
-    
+    .sousmenu_titre::after{
+        margin-left: 0;
+    }
+    /**card**/
+
     .card_titre{
         overflow: visible;
     }
     .card_info{
         overflow: visible;
     }
+    .card:hover{
+        transition-duration: .5s;
+        transform: scale(1.05); /* Safari et Chrome */
+        -moz-transform: scale(1.05); /* Firefox */
+    }
+
+    /**footer**/
     .footer_logo{
         align-items: center;
         margin-right: 0;
     }
+    
     .footer_list{
         display: flex;
         flex-direction: column;
