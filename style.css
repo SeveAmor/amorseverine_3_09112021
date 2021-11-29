@@ -1,7 +1,7 @@
 
 body{
     font-family:'Roboto', 'sans-serif';
-    margin: 10px;
+    margin: 0;
 }
 a{
     color: black;
@@ -128,19 +128,20 @@ header{
     position: relative;
 }
 .fonction_titre{
-    margin-top: 0;
+    margin-top: 2rem;
+    margin-left:1rem;
 }
 .fonction_choix{
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 1.5rem;
     padding: 0;  
 }
 ol{
     counter-reset: Liste;
 }
 .list{
-    padding: 1.5rem;
+    padding: 1.2rem;
     margin: 1rem 0;
     box-shadow: 0 0 0.5rem #a7a7a7;
     border-radius: 1.25rem;
@@ -154,7 +155,7 @@ ol{
 .list:before{
     content: counter(Liste);
     padding: 5px 9px 6px;
-    margin:0px 10px 0 -40px;
+    margin:6px 10px 0 -30px;
 	vertical-align: top;
 	background: var(--couleur-primaire);
 	-moz-border-radius: 60px;
@@ -167,9 +168,11 @@ ol{
 .fonction_icon{
     color:#7e7e7e;
     padding-top:0.5rem;
+    padding-left:1rem;
 }
 .fonction_text{
     padding: 0.5rem;
+    padding-left:1.5rem;
     font-weight: bold;
 }
 .list:hover {
@@ -288,7 +291,7 @@ footer .container{
 }
 .footer_logo{
     font-family: 'Shrikhand', "cursive";
-    margin-right: 9rem;
+    margin-right: 13rem;
     margin-top: 1.5rem;
     text-align: center;
     font-size: 1.3rem;
@@ -303,11 +306,12 @@ footer .container{
     margin-right: 0.5rem;
 }
 .footer_listbis{
+    display: inline-block;
     margin-bottom: 0.5rem;
     color:white;
-    cursor: pointer;
+    cursor: pointer; 
+    margin-bottom:1rem;    
 }
-
 
 /**keyframes***loader**/
 @keyframes loader{
