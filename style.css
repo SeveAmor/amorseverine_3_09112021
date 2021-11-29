@@ -78,7 +78,7 @@ header{
     margin: 0;
     text-align: center;
 }
-#gps{
+.gps{
     display: flex;
     justify-content: center;
     padding: 1.25rem 1rem;
@@ -166,6 +166,7 @@ ol{
 }
 .fonction_icon{
     color:#7e7e7e;
+    padding-top:0.5rem;
 }
 .fonction_text{
     padding: 0.5rem;
@@ -303,6 +304,7 @@ footer .container{
 }
 .footer_listbis{
     margin-bottom: 0.5rem;
+    color:white;
     cursor: pointer;
 }
 

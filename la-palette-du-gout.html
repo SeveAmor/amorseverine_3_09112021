@@ -17,7 +17,6 @@
     <!--icone onglet-->
     <link rel="shortcut icon" href="images/logo/ohmyfood@2x.svg">
 </head>
-</head>
 
 <body>
     <!--header-->
@@ -43,7 +42,7 @@
         <div class="menu_container">
             <h3 class="sousmenu_titre">Entrées</h3>
             <section class="sousmenu entrees">
-                <section class="card">
+                <div class="card">
                     <div class="card_header">
                         <h4 class="card_titre">Fricassée d'escargot</h4>
                         <p class="card_info">Au piment d'Espelette</p>
@@ -54,8 +53,8 @@
                             <i class="fa fa-check" aria-hidden="true"></i>
                         </div>
                     </div>
-                </section>
-                <section class="card">
+                </div>
+                <div class="card">
                     <div class="card_header">
                         <h4 class="card_titre">Foie gras de canard mi-cuit</h4>
                         <p class="card_info">Et ses copeaux de truffe noire</p>
@@ -66,8 +65,8 @@
                             <i class="fa fa-check" aria-hidden="true"></i>
                         </div>
                     </div>
-                </section>
-                <section class="card">
+                </div>
+                <div class="card">
                     <div class="card_header">
                         <h4 class="card_titre">Oeuf au plat</h4>
                         <p class="card_info">Assaisonné à la truffe sur lit de poireaux</p>
@@ -78,11 +77,11 @@
                             <i class="fa fa-check" aria-hidden="true"></i>
                         </div>
                     </div>
-                </section>
+                </div>
             </section>
             <h3 class="sousmenu_titre">PLATS</h3>
             <section class="sousmenu plat">
-                <section class="card">
+                <div class="card">
                     <div class="card_header">
                         <h4 class="card_titre">Filet de boeuf aux herbes</h4>
                         <p class="card_info">Accompagné de sa ribambelle de légumes</p>
@@ -93,35 +92,35 @@
                             <i class="fa fa-check" aria-hidden="true"></i>
                         </div>
                     </div>
-                </section>
-                <section class="card">
-                    <div class="card_header">
-                        <h4 class="card_titre">Parmentier de queue de boeuf</h4>
-                        <p class="card_info">A la truffe noire sur sa purée de panais</p>
+                </div>
+            <div class="card">
+                <div class="card_header">
+                    <h4 class="card_titre">Parmentier de queue de boeuf</h4>
+                    <p class="card_info">A la truffe noire sur sa purée de panais</p>
+                </div>
+                <div class="card_prix">35€</div>
+                <div class="card_valid">
+                    <div class="card_check">
+                        <i class="fa fa-check" aria-hidden="true"></i>
                     </div>
-                    <div class="card_prix">35€</div>
-                    <div class="card_valid">
-                        <div class="card_check">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                        </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_header">
+                    <h4 class="card_titre">Filet de Turbot</h4>
+                    <p class="card_info">Aux agrumes</p>
+                </div>
+                <div class="card_prix">44€</div>
+                <div class="card_valid">
+                    <div class="card_check">
+                        <i class="fa fa-check" aria-hidden="true"></i>
                     </div>
-                </section>
-                <section class="card">
-                    <div class="card_header">
-                        <h4 class="card_titre">Filet de Turbot</h4>
-                        <p class="card_info">Aux agrumes</p>
-                    </div>
-                    <div class="card_prix">44€</div>
-                    <div class="card_valid">
-                        <div class="card_check">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </section>
+                </div>
+            </div>
             </section>
             <h3 class="sousmenu_titre">DESSERTS</h3>
             <section class="sousmenu dessert">
-                <section class="card">
+                <div class="card">
                     <div class="card_header">
                         <h4 class="card_titre">Paris-Brest</h4>
                         <p class="card_info">Revisité</p>
@@ -132,8 +131,8 @@
                             <i class="fa fa-check" aria-hidden="true"></i>
                         </div>
                     </div>
-                </section>
-                <section class="card">
+                </div>
+                <div class="card">
                     <div class="card_header">
                         <h4 class="card_titre">Macaron au chocolat d'exception</h4>
                         <p class="card_info">Et glace à la vanille de Madagascar</p>
@@ -144,8 +143,8 @@
                             <i class="fa fa-check" aria-hidden="true"></i>
                         </div>
                     </div>
-                </section>
-                <section class="card">
+                </div>
+                <div class="card">
                     <div class="card_header">
                         <h4 class="card_titre">Mousse au chocolat</h4>
                         <p class="card_info">Au piment d'espelette et à la truffe noire</p>
@@ -156,25 +155,24 @@
                             <i class="fa fa-check" aria-hidden="true"></i>
                         </div>
                     </div>
-                </section>
+                </div>
             </section>
             <div class="bouton">
                 <a class="bouton_titre" href="#" id="Commander">Commander</a>
             </div>
         </div>
-        </section>
     </main>
     <!--footer-->
     <footer>
         <div class="container">
             <span class="footer_logo">ohmyfood</span>
             <ul class="footer_list">
-                <li class="footer_listbis" href="#"><i class="fas fa-utensils footer_icon"></i>Proposer un
-                    restaurant</a></li>
-                <li class="footer_listbis" href="#"><i class="fas fa-hands-helping footer_icon"></i>Devenir
-                    partenaire</a></li>
-                <li class="footer_listbis" href="#">Mentions légales</a></li>
-                <li class="footer_listbis" href="mailto:contact@ohmyfood.com">Contact</a></li>
+                <li><a href="#" class="footer_listbis"><i class="fas fa-utensils footer_icon"></i>Proposer un
+                        restaurant</a></li>
+                <li><a href="#" class="footer_listbis"><i class="fas fa-hands-helping footer_icon"></i>Devenir
+                        partenaire</a></li>
+                <li><a href="#" class="footer_listbis">Mentions légales</a></li>
+                <li><a href="mailto:contact@ohmyfood.com" class="footer_listbis">Contact</a></li>
             </ul>
         </div>
     </footer>

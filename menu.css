@@ -214,6 +214,8 @@ footer .container{
 }
 .footer_listbis{
     margin-bottom: 0.5rem;
+    color: white;
+    cursor: pointer;
 }
 /**keyframe**/
 
