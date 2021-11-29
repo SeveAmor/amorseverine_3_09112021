@@ -83,14 +83,17 @@ h4{
     bottom: 0;
     margin-left: 1rem;
 }
+
+
+/**animation**/
 .entrees{
-    animation:apparition 800ms 500ms linear both;
+    animation:apparition 800ms linear 500ms  both;
 }
 .plat{
-    animation:apparition 800ms 1000ms linear both;
+    animation:apparition 800ms linear 1000ms  both;
 }
 .dessert{
-    animation:apparition 800ms 1500ms linear both;
+    animation:apparition 800ms linear 1500ms  both;
 }
 /**card**/
 
@@ -103,21 +106,21 @@ h4{
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 0 0.5rem #a7a7a7;
-    animation: opacity 2000ms 1000ms linear both;
+    animation: opacity 2000ms linear 1000ms  both;
     transform: translateY(0);
     max-width: 100%;
 }
 .card_header{
     flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .card_titre{
-    width: 200px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 .card_info {
-    width: 200px;
     font-size: 0.8rem;
     margin-top:0;
     overflow: hidden;
@@ -129,6 +132,7 @@ h4{
     align-items: center;
     justify-content: flex-end;
     padding-left: 0.5rem; 
+    padding-right: 0.5rem;
     font-weight: bold; 
 }
 .card_valid{
@@ -156,9 +160,10 @@ h4{
 .fa-check{
     color: #99e2d0;
 }
-.card_valid:hover{
-    margin:0;
+.card:hover .card_valid{
+    margin: 0;
 }
+
 
 /**bouton commande**/
 .bouton_titre{
@@ -253,12 +258,7 @@ footer .container{
     .card_info{
         overflow: visible;
     }
-    .card:hover{
-        transition-duration: .5s;
-        transform: scale(1.05); /* Safari et Chrome */
-        -moz-transform: scale(1.05); /* Firefox */
-    }
-
+    
     /**footer**/
     .footer_logo{
         align-items: center;

@@ -167,17 +167,19 @@ ol{
 .fonction_icon{
     color:#7e7e7e;
 }
-
-.list:hover{
-    background-color: #f5edff;
-}
-.fonction_icon:hover{
-    color:var(--couleur-primaire);
-    
-}
 .fonction_text{
     padding: 0.5rem;
     font-weight: bold;
+}
+.list:hover {
+    background-color: #f5edff;
+}
+.fonction_icon:hover{
+    color:var(--couleur-primaire); 
+}
+.list:hover .fonction_icon{
+    background-color: #f5edff;
+    color:var(--couleur-primaire);
 }
 /**restaurants**/
 .restaurants{
@@ -257,15 +259,16 @@ ol{
     width: 100%;
 }
 .far:hover{
-    opacity: 0;
+    opacity: 1;
     transition-duration: .25s;
     z-index: 1;
     background: linear-gradient(#9356dc,#ff79da);
 }
-
-.card_coeur:hover {
+.card_coeur:hover{
     background: linear-gradient(#9356dc,#ff79da);
-    
+}
+.card_coeur:hover .far{
+    opacity: 0;
 }
 .card_heart:active{
     background: linear-gradient(#9356dc,#ff79da);
@@ -381,13 +384,13 @@ footer .container{
         height: 12rem;
     }
     .card:hover{
-        transform: scale(1.05); /* Safari et Chrome */
-        -moz-transform: scale(1.05); /* Firefox */
+        transform: scale(1.1); /* Safari et Chrome */
+        -moz-transform: scale(1.1); /* Firefox */
         transition-duration: .5s;
         backface-visibility: hidden;
         object-fit: cover;
     }
-    /**foter**/
+    /**footer**/
     .footer_logo{
         align-items: center;
         margin-right: 0;
