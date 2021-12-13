@@ -100,6 +100,7 @@ h4{
 .card{
     background-color: #fff;
     display: flex;
+    
     border-radius: 0.75rem;
     padding-left: 0.5rem;
     margin: 1rem 0;
@@ -133,6 +134,7 @@ h4{
     justify-content: flex-end;
     padding-left: 0.5rem; 
     padding-right: 0.5rem;
+    padding-top: 2rem;
     font-weight: bold; 
 }
 .card_valid{
@@ -257,14 +259,40 @@ footer .container{
         margin-left: 0;
     }
     /**card**/
+    .card{
+        width: 350px;
 
+    }
     .card_titre{
-        overflow: visible;
+        
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     .card_info{
-        overflow: visible;
+        
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .menu_container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }    
+    .sousmenu:hover{
+        overflow: hidden;
+        
     }
     
+    .sousmenu{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .bouton_titre{
+        margin-right: 30rem;
+        margin-left: 30rem;
+        padding:1rem 5rem;
+    }
     /**footer**/
     .footer_logo{
         align-items: center;
@@ -276,5 +304,12 @@ footer .container{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+}
+@media ( max-width: 768px) {  /*format tablette*/
+    .bouton_titre{
+        margin-right: 30rem;
+        margin-left: 20rem;
+        padding: 1rem 5rem;
     }
 }

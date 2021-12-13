@@ -13,7 +13,21 @@ a{
     --couleur-tertiaire: #99E2D0;
 }
 /**loader**/
-
+.loader_page{
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f3f3f3d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: visibility 3s;
+}
 .loader{
     background-color: rgba(255,255,255,0.14);
     width: 50px;
@@ -390,11 +404,11 @@ footer .container{
         height: 12rem;
     }
     .card:hover{
-        transform: scale(1.1); /* Safari et Chrome */
-        -moz-transform: scale(1.1); /* Firefox */
+        
         transition-duration: .5s;
         backface-visibility: hidden;
         object-fit: cover;
+        box-shadow: 0 0 1rem 0 #2e2b2b;
     }
     /**footer**/
     .footer_logo{
