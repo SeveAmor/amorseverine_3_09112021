@@ -25,8 +25,8 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: loader_page 5s;
-    transition: visibility 3s;
+    animation: loader_page 3s forwards;
+    
 }
 .loader{
     background-color: rgba(255,255,255,0.14);
@@ -329,11 +329,12 @@ footer .container{
 
 /**keyframes***loader**/
 @keyframes loader_page{
-    
+    0%{
+        opacity: 100;
+    }
     100%{
         visibility: hidden;
-        opacity:0;
-        z-index: -10;
+        opacity:0%;
     }
 }
 @keyframes loader{
