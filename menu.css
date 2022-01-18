@@ -289,8 +289,9 @@ footer .container{
         
     }
     .bouton_titre{
-        margin-right: 30rem;
-        margin-left: 30rem;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 250px;
         padding:1rem 5rem;
     }
     /**footer**/
@@ -308,8 +309,9 @@ footer .container{
 }
 @media ( max-width: 768px) {  /*format tablette*/
     .bouton_titre{
-        margin-right: 30rem;
-        margin-left: 20rem;
+        margin-right: auto;
+        margin-left: auto;
         padding: 1rem 5rem;
+        max-width: 250px;
     }
 }
